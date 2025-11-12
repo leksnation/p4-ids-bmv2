@@ -45,21 +45,10 @@ h1 (192.168.1.1)  ----  s1 (P4 Switch)  ----  h2 (192.168.1.2)
 
 ```bash
 # Clone repo
-git clone https://github.com/yourusername/p4-ids-bmv2.git
+git clone https://github.com/leksnation/p4-ids-bmv2.git
 cd p4-ids-bmv2
 
-# Run everything (installs deps, compiles, starts switch + Mininet)
-chmod +x setup_and_run.sh
-./setup_and_run.sh
 ```
-
-> This script:
-> 1. Installs **BMv2**, **p4c**, **p4utils**
-> 2. Compiles the P4 program
-> 3. Starts the P4 switch
-> 4. Adds IDS rule (`192.168.1.1 → drop`)
-> 5. Launches Mininet
-
 ---
 
 ## Manual Setup
